@@ -10,11 +10,11 @@ before_action :find_post, only: [:show, :edit, :update, :destroy]
 	end
 
 	def new
-		@post = Post.new
+		@post = current_user.posts.build
 	end
 
 	def create
-		@post = Post.new(post_params) #creating posts based on the passed attributes
+		@post = current_user.posts.build(post_params) #creating posts based on the passed attributes
 
 		if @post.save
 			redirect_to @post #go to post show page
