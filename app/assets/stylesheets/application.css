@@ -76,5 +76,28 @@ body {
 			margin-top: .25rem;
 			font-size: 0.9rem;
 			color: #B2BAC2;
+
+}
+
+#post_content {
+	background: white;
+	padding: 2em 5%;
+	border-radius: .5em;
+	h1 {
+		font-weight: 100;
+		font-size: 2em;
+		color: #397CAC;
+		margin-top: 0;
+	}
+	p {
+		color: #D2DAC2;
+		font-size: 0.9em;
+		font-weight: 100;
+		line-height: 1.5;
+	}
+}
+	}
+	}
+}
 		
 }
